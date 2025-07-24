@@ -5,3 +5,5 @@ scikit-learn
 xgboost
 numpy
 pydantic
+streamlit
+
