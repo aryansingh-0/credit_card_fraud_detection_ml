@@ -12,7 +12,7 @@ st.markdown("Predict whether a credit card transaction is **Fraudulent** or **Le
 st.subheader("Enter Transaction Details:")
 
 # Create inputs for Time, V1-V28, and Amount
-time = st.number_input("⏱️ Time", help="Time elapsed between this transaction and the first transaction in the dataset.")
+time = st.number_input("⏱️ Time (in seconds)", min_value=0, step=1, help="Time since the first transaction.")
 features = []
 
 for i in range(1, 29):
